@@ -78,7 +78,7 @@ nano Jarvis/src/jarvis/jarvis/setting.py
 ```
 
 ### Start voice commanding assistant
-![alt text](https://github.com/ggeop/Jarvis/blob/master/imgs/Jarvis_printscreen.PNG)
+![alt text](https://github.com/yoyozaemon/imgs/Jarvis_printscreen.PNG)
 
 *   Start the assistant service:
 ```bash
