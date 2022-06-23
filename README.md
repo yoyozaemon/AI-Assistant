@@ -1,5 +1,6 @@
 # AI-Assistant
 
+![alt text](https://github.com/yoyozaemon/AI-Assistant/blob/master/imgs/jarvis_logo.png)
 About Jarvis - An Intelligent AI Consciousness 🧠
 
 Jarvis is a voice commanding assistant service in [Python 3.8](https://www.python.org/downloads/release/python-360/)
@@ -42,7 +43,7 @@ It can recognize human speech, talk to user and execute basic commands.
 *   Answers in **general questions** (via call Wolfram API), e.g ('Jarvis tell me the highest building') 
 *   **Change input mode on run time**, triggered by a phrase e.g 'Jarvis change settings')
 *   Easy **voice-command customization**
-*   Configurable **assistant name** (e.g 'Jarvis', 'Sofia', 'John' etc.) (change on run time supported)
+*   Configurable **assistant name** (e.g 'Jarvis', 'Friday', 'Alexa' etc.) (change on run time supported)
 *   **Log preview** in console
 *   **Vocal or/and text response**
 *   **Keeps commands history and learned skills** in MongoDB.'
@@ -96,3 +97,16 @@ You can easily add a new skill in two steps.
   'description': 'skill description..'
 }               
 ```
+*   Create a new skill module in **skills/collection**
+
+### Desicion Model
+![alt text](https://github.com/yoyozaemon/AI-Assistant/blob/master/imgs/desicion_model.png)
+
+### Extract skill
+The skill extraction implement in a matrix of [TF-IDF features](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) for each skill.
+In the following example he have a dimensional space with three skills.
+The user input analyzed in this space and by using a similarity metric (e.g cosine) we find the most similar skill.
+![alt text](https://github.com/yoyozaemon/AI-Assistant/blob/master/imgs/skill_space_desicion.png)
+
+---
+
