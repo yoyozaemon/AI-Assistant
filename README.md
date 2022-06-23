@@ -59,7 +59,7 @@ All the following APIs have free no-commercial API calls. Subscribe to the follo
 ### Setup Jarvis in Ubuntu/Debian system
 * Download the Jarvis repo locally:
 ```bash
-git clone https://github.com/yoyozaemon/AI-Assistant.git --branch master
+git clone https://github.com/yoyozaemon/AI-Assistant.git 
 ```
 *   Change working directory
 ```bash
